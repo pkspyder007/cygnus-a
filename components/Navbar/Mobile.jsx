@@ -25,7 +25,7 @@ function Mobile() {
                     </div>
                     <ul className="flex flex-col justify-center items-center">
                         <li>
-                            <Link href="/" >
+                            <Link href="/blog" >
                                 <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
                                     Blog
                                 </a>

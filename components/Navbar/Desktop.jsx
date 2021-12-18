@@ -8,7 +8,7 @@ function Desktop() {
             <Logo />
             <ul className="flex flex-row items-center">
                 <li>
-                    <Link href="/">
+                    <Link href="/blog">
                         <a className="text-dark-gray text-xl font-bold hover:text-light-green hover:underline hover:decoration-wavy">
                             Blog
                         </a>
