@@ -1,15 +1,21 @@
+import Link from 'next/link';
 import React from 'react'
 
-function PostPreview() {
+function PostPreview({ post }) {
+    if (!post) return null;
     return (
         <div className="my-12">
-            <h2 className="text-dark-gray text-2xl font-semibold">How I created a blog in 2021</h2>
+            <Link href={`/posts/${post.slug}`} passHref>
+                <h2 className="text-dark-gray text-2xl font-semibold cursor-pointer">{post?.title}</h2>
+            </Link>
             <p className="my-6 leading-8 font-light">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, repudiandae eaque. Sed tenetur aperiam ea quos, optio aliquam perferendis velit cumque quidem vero vitae, quo repudiandae corporis, vel earum labore!
+                {post?.description}
             </p>
-            <button>
-                Read More
-            </button>
+            <Link href={`/posts/${post.slug}`} passHref>
+                <a>
+                    Read More
+                </a>
+            </Link>
         </div>
     )
 }

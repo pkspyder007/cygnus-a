@@ -25,7 +25,9 @@ const tailwindConfig = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 
 module.exports = withAnimations(tailwindConfig);

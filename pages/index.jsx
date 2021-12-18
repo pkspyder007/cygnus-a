@@ -3,8 +3,12 @@ import Hero from '@/components/Hero/Hero'
 import Container from '@/components/Layout/Container'
 import Wave from '@/components/Wave'
 import Head from 'next/head'
+import { getAllPostMeta } from '@/utils/blog'
+import { sortByDate } from '../utils'
 
-export default function Home() {
+export default function Home(
+  { posts }
+) {
   return (
     <div className="">
       <Head>
@@ -17,10 +21,23 @@ export default function Home() {
       </Container>
       <Wave />
       <Container center={true}>
-        <BlogWrapper />
+        <BlogWrapper posts={posts} />
       </Container>
 
     </div >
 
   )
 }
+
+
+export const getStaticProps = async () => {
+  let posts = getAllPostMeta()
+  posts = posts.sort((a, b) => sortByDate(b.date, a.date)).slice(0, posts.length > 8 ? 8 : posts.length);
+  // const posts = getAllPostMeta()
+  return {
+    props: {
+      posts
+    }
+  }
+}
+
