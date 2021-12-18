@@ -25,15 +25,15 @@ function Mobile() {
                     </div>
                     <ul className="flex flex-col justify-center items-center">
                         <li>
-                            <Link href="/">
-                                <a className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
+                            <Link href="/" >
+                                <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
                                     Blog
                                 </a>
                             </Link>
                         </li>
                         <li className="mt-12">
                             <Link href="/about">
-                                <a className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
+                                <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
                                     About
                                 </a>
                             </Link>

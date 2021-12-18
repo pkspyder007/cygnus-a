@@ -7,9 +7,6 @@ const defaultOptions = {
     loop: true,
     autoplay: true,
     animationData: animationData,
-    rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-    }
 };
 
 function Hero() {
@@ -22,7 +19,7 @@ function Hero() {
                     A software engineer working @ <span className="text-light-green">Quizizz</span>
                 </h1>
             </div>
-            <div className='animate-slideInRight -mt-24 mb-12 md:mt-0 md:mb-0'>
+            <div className='-mt-24 mb-12 md:mt-0 md:mb-0'>
                 <Lottie
                     options={defaultOptions}
                 />
