@@ -8,11 +8,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-lottie": "^1.2.3"
   },
   "devDependencies": {
+    "animated-tailwindcss": "^3.0.0-rc.0",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7"
   }
