@@ -23,7 +23,11 @@ function Links() {
                                 Github: <a className='ml-3' href="https://github.com/pkspyder007" target="_blank" rel="noreferrer">pkspyder007</a>
                             </p>
                         </li>
-
+                        <li>
+                            <p>
+                                Twitter: <a className='ml-3' href="https://github.com/pkspyder007" target="_blank" rel="noreferrer">pkspyder007</a>
+                            </p>
+                        </li>
                         <li>
                             <p>
                                 Resume: <a className='ml-3' href="/praveen_kumar.pdf" target="_blank" rel="noreferrer">PDF</a>

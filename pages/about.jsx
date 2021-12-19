@@ -31,7 +31,7 @@ function about() {
                         <li><a href="https://rinnegan.co" target="_blank" rel="noreferrer">Rinnegan Technologies</a></li>
                     </ul>
                     <p>
-                        Looking for my resume? Get it from <Link href={"/resume"}><a>here</a></Link>
+                        Looking for my resume? Get it from <Link href={"/praveen_kumar.pdf"}><a>here</a></Link>
                     </p>
                     <p>
                         My free time generally goes into learning new technology in web development and <strong>JavaScript</strong> ecosystem.
