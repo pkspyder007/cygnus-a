@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon.icon-link::before {
+            content: "🔗";
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 6px;
+}

@@ -2,11 +2,11 @@ import React from 'react'
 import Desktop from './Desktop'
 import Mobile from './Mobile'
 
-function Navbar() {
+function Navbar({ isScrolled }) {
     return (
         <>
-            <Desktop />
-            <Mobile />
+            <Desktop isScrolled={isScrolled} />
+            <Mobile isScrolled={isScrolled} />
         </>
     )
 }

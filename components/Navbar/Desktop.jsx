@@ -1,10 +1,14 @@
+import { classes } from '@/utils/css'
 import Link from 'next/link'
 import React from 'react'
 import Logo from '../Common/Logo'
 
-function Desktop() {
+function Desktop({ isScrolled }) {
+    //TODO: Make navbar sticky on scroll
     return (
-        <nav className="hidden md:flex justify-between items-center animate-slideInDown">
+        <nav className={classes([
+            [true, "hidden md:flex justify-between items-center animate-slideInDown z-50", ""],
+        ])}>
             <Logo />
             <ul className="flex flex-row items-center">
                 <li>

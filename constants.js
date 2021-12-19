@@ -1,5 +1,4 @@
 export const CATEGORIES = {
-    ALL: 'all',
     REACT: 'React.js',
     JAVASCRIPT: 'JavaScript',
     WEBDEV: 'Web Development',
