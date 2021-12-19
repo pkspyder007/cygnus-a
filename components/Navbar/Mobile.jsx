@@ -39,6 +39,13 @@ function Mobile() {
                             </Link>
                         </li>
                         <li className="mt-12">
+                            <Link href="/projects">
+                                <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
+                                    Projects
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="mt-12">
                             <Link href="/links">
                                 <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
                                     Links

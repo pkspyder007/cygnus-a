@@ -1,0 +1,109 @@
+A collection of useful hooks in react that comes handly in day to day development.
+
+- useLocalStorage
+- useMouseCoords
+- usenetworkStatus
+
+> useLocalStorage
+
+** Storing data persistently is something that we encounter very often this hooks makes an easy replacement for <mark>useState hook</mark> in <mark>React.js</mark> **
+
+```js
+/* useLocalStorage */
+
+import { useState } from "react";
+
+const useLocalStorage = (key, initialValue) => {
+  const [value, setValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      alert("Something went wrong.");
+      console.log(error);    
+    }
+  });
+
+  const setLocalValue = (value) => {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+      setValue(value)
+    } catch (error) {
+      alert("Something went wrong.");
+      console.log(error);   
+    }
+  }
+
+  return [value, setLocalValue];
+}
+
+export default useLocalStorage;
+```
+
+> useMouseCoords 
+
+** Once I needed to show a custom cursor and to do so I required to have the current mouse coordinates. So I abstracted the logic in this custom hook.**
+
+```js
+/* useMouseCoords */
+
+import { useState, useEffect } from "react";
+
+const useMouseCoords = () => {
+
+  const [coords, setCoords] = useState([0,0]);
+
+  useEffect(() => {
+    const handleCoords = ({ clientX, clientY }) => {
+      setCoords([clientX, clientY]);
+    }
+
+    window.addEventListener("mousemove", handleCoords);
+
+    return () => {
+      window.removeEventListener("mousemove", handleCoords);
+    }
+
+  }, []);
+
+  return coords;
+}
+
+export default useMouseCoords;
+```
+
+> usenetworkStatus 
+
+** Most social platforms have an online or offline indicator and to find the network status, I created this custom hook. **
+
+```js
+/* useNetworkStatus */
+
+import { useState, useEffect } from "react";
+
+const useNetworkStatus = () => {
+  const [status, setStatus] = useState(navigator.onLine);
+
+  useEffect(() => {
+    const setOnline = () => {
+      setStatus(true);
+    };
+
+    const setOffline = () => {
+      setStatus(false);
+    };
+
+    window.addEventListener("online", setOnline);
+    window.addEventListener("offline", setOffline);
+
+    return () => {
+      window.removeEventListener("online", setOnline);
+      window.removeEventListener("offlien", setOffline);
+    };
+  }, []);
+
+  return status;
+};
+
+export default useNetworkStatus;
+```
