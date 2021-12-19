@@ -12,10 +12,7 @@ export default function Home(
 ) {
     return (
         <div className="">
-            <Head>
-                <title>Blog | Praveen kr.</title>
-                <Meta title="Blog | Praveen Kr." description="Posts related to web development and software engineering" url="https://praveeen.in/blog" />
-            </Head>
+            <Meta title="Blog | Praveen Kr." description="Posts related to web development and software engineering" url="https://praveeen.in/blog" />
             <Container center={true}>
                 <BlogWrapper posts={posts} />
             </Container>

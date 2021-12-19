@@ -12,9 +12,6 @@ export default function Home(
 ) {
   return (
     <div className="">
-      <Head>
-        <title>Praveen kr. | 🏡</title>
-      </Head>
       <Container>
         <Meta title="Home | Praveen Kr." description="Welcome to my online cave. Make sure to explore around and read some articles." url="https://praveeen.in/" />
         <Hero />

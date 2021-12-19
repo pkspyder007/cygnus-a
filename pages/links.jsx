@@ -7,10 +7,7 @@ import React from 'react'
 function Links() {
     return (
         <>
-            <Head>
-                <title>Links | Praveen Kr.</title>
-                <Meta title="Links | Praveen Kr." description="Links to my socials and contact information" url="https://praveeen.in/links" />
-            </Head>
+            <Meta title="Links | Praveen Kr." description="Links to my socials and contact information" url="https://praveeen.in/links" />
             <Container>
                 <div className="prose prose-p:text-md md:prose-p:text-xl mx-auto md:mt-12 break-words mb-4 md:mb-24">
                     <span className="underline underline-offset-8 decoration-wavy"><H1 text="Socials & Links" classes="leading-[1.4]" /></span>
@@ -23,7 +20,7 @@ function Links() {
                         </li>
                         <li>
                             <p>
-                                Github: <a className='ml-3' href="https://github.com/pkspyder007" target="_blank" rel="noreferrer">https://github.com/pkspyder007</a>
+                                Github: <a className='ml-3' href="https://github.com/pkspyder007" target="_blank" rel="noreferrer">pkspyder007</a>
                             </p>
                         </li>
 

@@ -1,5 +1,6 @@
 import H1 from '@/components/Common/H1'
 import Container from '@/components/Layout/Container'
+import Meta from '@/components/Meta'
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
@@ -7,9 +8,7 @@ import React from 'react'
 function about() {
     return (
         <>
-            <Head>
-                <title>About | Praveen Kr.</title>
-            </Head>
+            <Meta title="About" description="Get to know me a little more" url="https://praveeen.in/about" />
             <Container>
                 <div className="prose prose-p:text-xl mx-auto md:mt-12">
                     <span className="underline  underline-offset-8 decoration-wavy"><H1 text="About ME!" /></span>
