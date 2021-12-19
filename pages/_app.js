@@ -7,9 +7,20 @@ import '@styles/extra-syntax.css'
 import { useEffect } from 'react'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
-import * as gtag from '@utils/gtag.js'
+import * as gtag from '../utils/gtag'
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return <>
     <Script
       strategy="afterInteractive"
