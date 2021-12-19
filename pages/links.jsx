@@ -10,7 +10,7 @@ function Links() {
                 <title>Links | Praveen Kr.</title>
             </Head>
             <Container>
-                <div className="prose prose-p:text-md md:prose-p:text-xl mx-auto md:mt-12 break-words">
+                <div className="prose prose-p:text-md md:prose-p:text-xl mx-auto md:mt-12 break-words mb-4 md:mb-24">
                     <span className="underline underline-offset-8 decoration-wavy"><H1 text="Socials & Links" classes="leading-[1.4]" /></span>
                     <ul>
                         <li>
@@ -24,19 +24,20 @@ function Links() {
                                 Github: <a className='ml-3' href="https://github.com/pkspyder007" target="_blank" rel="noreferrer">https://github.com/pkspyder007</a>
                             </p>
                         </li>
+
                         <li>
                             <p>
-                                Resume: <a className='ml-3' href="/resume" target="_blank" rel="noreferrer">https://praveeen.in/resume</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Resume (PDF): <a className='ml-3' href="/resume?pdf=true" target="_blank" rel="noreferrer">G-Drive</a>
+                                Resume: <a className='ml-3' href="/praveen_kumar.pdf" target="_blank" rel="noreferrer">PDF</a>
                             </p>
                         </li>
                         <li>
                             <p>
                                 Discord Community: <a className='ml-3' href="https://discord.gg/vnT9XmwHdj" target="_blank" rel="noreferrer">Codú Community</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Youtube: <a className='ml-3' href="https://www.youtube.com/channel/UCApeS8qFr_iegt-FrdIq8mw" target="_blank" rel="noreferrer">Channel</a>
                             </p>
                         </li>
                     </ul>
