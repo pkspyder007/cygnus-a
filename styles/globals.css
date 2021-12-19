@@ -8,3 +8,7 @@
             display: inline-block;
             margin-right: 6px;
 }
+
+mark {
+    background-color: rgb(209 250 229);
+}

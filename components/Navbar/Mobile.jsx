@@ -17,8 +17,8 @@ function Mobile() {
         <>
             {isVisible ? (
                 <nav className={classes([
-                    [isVisible, 'flex flex-col items-center', 'hidden animate-slideOutLeft'],
-                    [true, 'z-50 absolute inset-0 md:hidden bg-light-green w-screen h-screen animate-slideInLeft', '']
+                    [isVisible, 'flex flex-col items-center', 'hidden animate-duration-[0.5s] animate-slideOutLeft'],
+                    [true, 'z-50 absolute inset-0 md:hidden bg-light-green w-screen h-screen nimate-duration-[0.5s] animate-slideInLeft', '']
                 ])}>
                     <div className='flex flex-row justify-around items-center w-full my-24'>
                         <XCircleIcon className="text-white h-16 w-16 hover:text-dark-green" onClick={toggleMenu} />
@@ -35,6 +35,13 @@ function Mobile() {
                             <Link href="/about">
                                 <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
                                     About
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="mt-12">
+                            <Link href="/links">
+                                <a onClick={toggleMenu} className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy">
+                                    Links
                                 </a>
                             </Link>
                         </li>
