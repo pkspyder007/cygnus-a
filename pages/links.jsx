@@ -1,5 +1,6 @@
 import H1 from '@/components/Common/H1'
 import Container from '@/components/Layout/Container'
+import Meta from '@/components/Meta'
 import Head from 'next/head'
 import React from 'react'
 
@@ -8,6 +9,7 @@ function Links() {
         <>
             <Head>
                 <title>Links | Praveen Kr.</title>
+                <Meta title="Links | Praveen Kr." description="Links to my socials and contact information" url="https://praveeen.in/links" />
             </Head>
             <Container>
                 <div className="prose prose-p:text-md md:prose-p:text-xl mx-auto md:mt-12 break-words mb-4 md:mb-24">

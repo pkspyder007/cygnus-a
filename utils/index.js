@@ -18,3 +18,7 @@ export const formatDateForPostHeader = (dateStr) => {
 
     return formattedDate;
 }
+
+export const getOgImageUrl = (title) => {
+    return `https://og-image-nu-two.vercel.app/${encodeURIComponent(title)}.png?theme=dark&md=1&fontSize=100px&images=https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg&images=https://cygnus.vercel.app/img/name.svg`
+}

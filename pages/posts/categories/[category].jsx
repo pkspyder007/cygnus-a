@@ -3,12 +3,16 @@ import { getAllPostMeta } from '@/utils/blog'
 import { CATEGORIES } from '../../../constants'
 import React from 'react'
 import Container from '@/components/Layout/Container'
+import Meta from '@/components/Meta'
 
 function CategoryPost({ posts, category }) {
     return (
-        <Container center={true}>
-            <PostsList posts={posts} title={CATEGORIES[category]} />
-        </Container>
+        <>
+            <Meta title={`${CATEGORIES[category]} Articles`} url={`https://praveeen.in/posts/${CATEGORIES[category]}`} description={`All posts related to ${CATEGORIES[category]}.`} />
+            <Container center={true}>
+                <PostsList posts={posts} title={CATEGORIES[category]} />
+            </Container>
+        </>
     )
 }
 

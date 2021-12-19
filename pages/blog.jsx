@@ -5,6 +5,7 @@ import Wave from '@/components/Wave'
 import Head from 'next/head'
 import { getAllPostMeta } from '@/utils/blog'
 import { sortByDate } from '../utils'
+import Meta from '@/components/Meta'
 
 export default function Home(
     { posts }
@@ -13,8 +14,7 @@ export default function Home(
         <div className="">
             <Head>
                 <title>Blog | Praveen kr.</title>
-                <meta name="description" content="Posts related to web development and software engineering" />
-                <link rel="icon" href="/favicon.ico" />
+                <Meta title="Blog | Praveen Kr." description="Posts related to web development and software engineering" url="https://praveeen.in/blog" />
             </Head>
             <Container center={true}>
                 <BlogWrapper posts={posts} />

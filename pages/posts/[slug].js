@@ -8,12 +8,16 @@ import Post from '@/components/Blog/Post';
 import rehypePrism from 'rehype-prism-plus'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import Meta from '@/components/Meta';
 
 function PostPage({ frontMatter, source }) {
     return (
-        <Container center={true}>
-            <Post source={source} frontMatter={frontMatter} />
-        </Container>
+        <>
+            <Meta title={frontMatter.title} url={`https://praveeen.in/posts/${frontMatter.slug}`} description="All of my recent learning in form of blog articles." />
+            <Container center={true}>
+                <Post source={source} frontMatter={frontMatter} />
+            </Container>
+        </>
     )
 }
 
