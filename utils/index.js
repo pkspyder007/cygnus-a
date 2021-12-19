@@ -5,7 +5,6 @@ export const sortByDate = (a, b) => {
     const dateA = new Date(a);
     const dateB = new Date(b);
     if (!dateA || !dateB) return 0;
-    console.log(a, b)
     return dateA - dateB;
 }
 export const formatDateForPostHeader = (dateStr) => {
