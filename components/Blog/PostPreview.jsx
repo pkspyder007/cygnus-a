@@ -6,7 +6,7 @@ function PostPreview({ post }) {
     return (
         <div className="my-12">
             <Link href={`/posts/${post.slug}`} passHref>
-                <h2 className="text-dark-gray text-2xl font-semibold cursor-pointer">{post?.title}</h2>
+                <h2 className="text-dark-gray text-2xl font-semibold cursor-pointer">{post?.title}<small className='text-sm ml-1 font-light'>, {post.readingTime}</small></h2>
             </Link>
             <p className="my-6 leading-8 font-light">
                 {post?.description}

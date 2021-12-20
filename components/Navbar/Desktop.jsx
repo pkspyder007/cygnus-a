@@ -39,6 +39,13 @@ function Desktop({ isScrolled }) {
                         </a>
                     </Link>
                 </li>
+                <li className="ml-12">
+                    <Link href="/snippets">
+                        <a className="text-dark-gray text-xl font-bold hover:text-light-green hover:underline hover:decoration-wavy">
+                            Snippets
+                        </a>
+                    </Link>
+                </li>
             </ul>
         </nav>
     )
