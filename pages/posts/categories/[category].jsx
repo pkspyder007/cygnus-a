@@ -32,7 +32,6 @@ export const getStaticProps = ({ params }) => {
 
 export const getStaticPaths = async () => {
     const categories = Object.keys(CATEGORIES)
-    console.log(categories);
     const paths = categories.map(category => (`/posts/categories/${category}`))
     return {
         paths,
