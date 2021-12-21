@@ -11,9 +11,9 @@ const defaultOptions = {
 
 function Hero() {
     return (
-        <div className='flex flex-col-reverse items-center md:flex-row mt-28'>
+        <div className='flex flex-col-reverse items-center md:flex-row mt-28 dark:text-light-gray'>
             <div>
-                <h1 className="animate-slideInLeft mt-6 mb-20 text-4xl lg:text-6xl font-bold text-dark-green md:text-6xl md:px-24 md:leading-12">
+                <h1 className="animate-slideInLeft mt-6 mb-20 text-4xl lg:text-6xl font-bold text-dark-green dark:text-light-gray md:text-6xl md:px-24 md:leading-12">
                     Hi, I&apos;m <span className="text-light-green">Praveen</span>
                     <br />
                     A software engineer working @ <span className="text-light-green">Quizizz</span>

@@ -10,7 +10,7 @@ function about() {
         <>
             <Meta title="About" description="Get to know me a little more" url="https://praveeen.in/about" />
             <Container>
-                <div className="prose prose-p:text-xl mx-auto md:mt-12">
+                <div className="prose prose-p:text-xl prose-p:leading-10 mx-auto md:mt-12 dark:text-light-gray dark:prose-a:text-light-green">
                     <span className="underline  underline-offset-8 decoration-wavy"><H1 text="About ME!" /></span>
                     <p>
                         Hi 👋🏽, I&apos;m Praveen, I love to  eat 🍔, code 💻, and explore 🌍.

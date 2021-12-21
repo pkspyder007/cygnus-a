@@ -10,3 +10,11 @@ export const CATEGORIES = {
     C: 'C',
     CPP: 'C++',
 }
+
+export const NAV_LINKS = [
+    { title: 'Blog', url: '/blog' },
+    { title: 'About', url: '/about' },
+    { title: 'Projects', url: '/projects' },
+    { title: 'Links', url: '/links' },
+    { title: 'Snippets', url: '/snippets' },
+]

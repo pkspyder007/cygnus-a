@@ -6,7 +6,7 @@ import React from 'react'
 function IIITUAdm() {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="IIITU admissions" />
                 <img src="/img/ia1.png" alt="liqrcart home design" />
                 <small className="text-red-500 font-semibold">* Code closed source due to college policy</small>

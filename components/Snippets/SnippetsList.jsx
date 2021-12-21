@@ -8,11 +8,11 @@ import Container from '../Layout/Container'
 function SnippetsList({ snippets }) {
     return (
         <Container center={true}>
-            <main className='prose mx-auto'>
+            <main className='prose dark:prose-invert mx-auto'>
                 <H1 text="Snippets" />
                 {snippets.map(snippet => (<div key={snippet.slug} className="my-12">
                     <Link href={`/snippets/${snippet.slug}`} passHref>
-                        <h2 className="text-dark-gray text-2xl font-semibold cursor-pointer">{snippet?.title}</h2>
+                        <h2 className="text-dark-gray dark:text-light-green text-2xl font-semibold cursor-pointer">{snippet?.title}</h2>
                     </Link>
                     <p className="my-6 leading-8 font-light">
                         {snippet?.description}

@@ -6,7 +6,7 @@ import Container from '@/components/Layout/Container'
 function Force() {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Force Website" />
                 <p>
                     Created a statically generated website for collge&apos;s technical club <a href="http://forceiiitu.in" target="_blank" rel="noopener noreferrer">Force</a> using

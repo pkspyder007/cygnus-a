@@ -12,3 +12,16 @@
 mark {
     background-color: rgb(209 250 229);
 }
+
+@media (prefers-color-scheme: dark) {
+    mark {
+        background-color: rgb(10, 94, 50);
+        /* color: rgb(255, 255, 255); */
+        padding: 2px 8px;
+        color: rgb(233, 231, 231) !important;
+    }
+    
+    mark strong {
+        color: rgb(233, 231, 231) !important;
+    }
+}

@@ -8,7 +8,7 @@ function CLI() {
     return (
         <Container center={true}>
             <Meta title="Tech Blogs CLI" description="techblogs.dev cli version using node.js" />
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Awesome tech blogs cli" />
                 <p>
                     This npm package is command-line version of <a href="https://tech-blogs.dev/" target="_blank" rel="noopener noreferrer">Techblogs.dev</a>. Which is a collection of technical blogs.

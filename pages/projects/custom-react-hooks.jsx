@@ -10,13 +10,14 @@ import fs from 'fs';
 import path from 'path';
 import { MDXRemote } from 'next-mdx-remote';
 import Meta from '@/components/Meta';
+import { MDXComponents } from '@/components/MDX';
 
 function CustomHooks({ source }) {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Custom React Hooks" />
-                <MDXRemote {...source} />
+                <MDXRemote components={MDXComponents} {...source} />
                 <a href="https://github.com/pkspyder007/custom-react-hooks" target="_blank" rel="noopener noreferrer">Github repo</a>
                 <br />
                 <a href="https://codesandbox.io/s/github/pkspyder007/custom-react-hooks" target="_blank" rel="noopener noreferrer">Code Sandbox link</a>

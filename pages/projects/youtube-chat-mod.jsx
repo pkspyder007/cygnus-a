@@ -6,7 +6,7 @@ import Container from '@/components/Layout/Container'
 function ChatMod() {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Youtube live chat moderator" />
                 <p>
                     Moderating a youtube live stream is not an easy task. And a spammer or a bot ruins the experience of the viewers. I personally saw this problem during a few streams so I decided to make a program that solves this for me.

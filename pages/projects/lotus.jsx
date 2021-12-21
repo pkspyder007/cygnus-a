@@ -6,7 +6,7 @@ import Container from '@/components/Layout/Container'
 function Lotus() {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Lotus" />
                 <p>
                     Generating and automating invoices is not an easy task and <mark>LOTUS</mark> help in mitigating that.

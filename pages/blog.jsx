@@ -1,8 +1,5 @@
 import BlogWrapper from '@/components/Blog/BlogWrapper'
-import Hero from '@/components/Hero/Hero'
 import Container from '@/components/Layout/Container'
-import Wave from '@/components/Wave'
-import Head from 'next/head'
 import { getAllPostMeta } from '@/utils/blog'
 import { sortByDate } from '../utils'
 import Meta from '@/components/Meta'

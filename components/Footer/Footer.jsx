@@ -4,7 +4,7 @@ import Logo from '../Common/Logo'
 
 function Footer() {
     return (
-        <footer className="flex flex-col lg:flex-row justify-between items-center">
+        <footer className="flex flex-col lg:flex-row justify-between items-center dark:text-light-gray">
             <Logo />
             <div className="mt-6 w-full lg:w-1/4 lg:mt-0 flex justify-between items-center">
                 <Link href="/">Home</Link>

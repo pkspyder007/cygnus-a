@@ -4,9 +4,9 @@ import React from 'react'
 function PostPreview({ post }) {
     if (!post) return null;
     return (
-        <div className="my-12">
+        <div className="my-12 dark:text-light-gray">
             <Link href={`/posts/${post.slug}`} passHref>
-                <h2 className="text-dark-gray text-2xl font-semibold cursor-pointer">{post?.title}<small className='text-sm ml-1 font-light'>, {post.readingTime}</small></h2>
+                <h2 className="text-dark-gray dark:text-light-green text-2xl font-semibold cursor-pointer">{post?.title}<small className='text-sm ml-1 font-light '>, {post.readingTime}</small></h2>
             </Link>
             <p className="my-6 leading-8 font-light">
                 {post?.description}

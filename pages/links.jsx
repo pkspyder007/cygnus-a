@@ -9,7 +9,7 @@ function Links() {
         <>
             <Meta title="Links | Praveen Kr." description="Links to my socials and contact information" url="https://praveeen.in/links" />
             <Container>
-                <div className="prose prose-p:text-md md:prose-p:text-xl mx-auto md:mt-12 break-words mb-4 md:mb-24">
+                <div className="prose prose-p:text-md dark:prose-invert md:prose-p:text-xl mx-auto md:mt-12 break-words mb-4 md:mb-24">
                     <span className="underline underline-offset-8 decoration-wavy"><H1 text="Socials & Links" classes="leading-[1.4]" /></span>
                     <ul>
                         <li>

@@ -27,7 +27,7 @@ function index() {
                     {PROJECTS.map(({ title, link }) => (<li key={title}>
                         <h2>
                             <Link href={`/projects/${link}`}>
-                                <a className="text-light-green no-underline hover:underline">{title}</a>
+                                <a className="text-light-green no-underline hover:underline dark:text-light-gray">{title}</a>
                             </Link>
                         </h2>
                     </li>))}

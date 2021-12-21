@@ -6,7 +6,7 @@ import React from 'react'
 function Liqrcart() {
     return (
         <Container center={true}>
-            <div className="prose mx-auto">
+            <div className="prose dark:prose-invert mx-auto">
                 <H1 text="Liqrcart" />
                 <img src="/img/lq1.png" alt="liqrcart landing" />
                 <p>
