@@ -15,7 +15,7 @@ function Desktop({ isScrolled }) {
                 {NAV_LINKS.map(({ title, url }) => (
                     <li key={title} className='ml-12'>
                         <Link href={url}>
-                            <a className="text-dark-gray text-xl font-bold hover:text-light-green hover:underline hover:decoration-wavy dark:text-light-gray">
+                            <a className="text-dark-gray text-md font-bold hover:text-light-green hover:underline hover:decoration-wavy dark:text-light-gray">
                                 {title}
                             </a>
                         </Link>
