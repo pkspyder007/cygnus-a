@@ -28,7 +28,7 @@ function Mobile() {
                         {NAV_LINKS.map(({ title, url }) => (
                             <li key={title} className='mt-6'>
                                 <Link href={url}>
-                                    <a className="text-white text-5xl hover:text-dark-gray hover:underline hover:decoration-wavy dark:text-light-green" onClick={toggleMenu}>
+                                    <a className="text-white text-5xl hover:text-light-green hover:underline hover:decoration-wavy dark:text-light-green" onClick={toggleMenu}>
                                         {title}
                                     </a>
                                 </Link>

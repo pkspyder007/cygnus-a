@@ -17,7 +17,7 @@ const tailwindConfig = {
         "light-green": "#75b1ad",
         "dark-green": "#27363b",
         "green": "#425e5e",
-        "light-gray": "#f5f5f5",
+        "light-gray": "#fafafa",
         "dark-gray": "#333333",
         "white": "#f5f5f5"
       },
