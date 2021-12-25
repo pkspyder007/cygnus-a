@@ -9,6 +9,7 @@ import rehypePrism from 'rehype-prism-plus'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import Meta from '@/components/Meta';
+import { visit } from 'unist-util-visit';
 
 function PostPage({ frontMatter, source }) {
     return (
@@ -31,11 +32,24 @@ export const getStaticProps = async ({ params }) => {
     const { content, data } = matter(source)
 
     // const toc = await getHeadings(content);
+    const fixMetaPlugin = (options = {}) => {
+        function visitor(node, index, parent) {
+            // if (!parent || parent.tagName !== 'pre' || node.tagName !== 'code') {
+            //     return;
+            // }
+
+            node.data = { ...node.data, meta: node.properties.metastring };
+        }
+        return (tree) => {
+            visit(tree, 'element', visitor);
+        };
+
+    };
 
     const mdxSource = await serialize(content, {
         mdxOptions: {
             // remarkPlugins: [],
-            rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, (...args) => rehypePrism(...args, {
+            rehypePlugins: [rehypeSlug, fixMetaPlugin, rehypeAutolinkHeadings, (...args) => rehypePrism(...args, {
                 showLineNumbers: true
             })],
         },
