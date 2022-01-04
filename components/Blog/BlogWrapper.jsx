@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 
 function BlogWrapper({ posts }) {
     return (
-        <main className='grid grid-cols-7'>
+        <main className='grid grid-cols-7 mt-6'>
             <PostsList posts={posts} title="Recently Published" />
             <Sidebar />
         </main>

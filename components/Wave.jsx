@@ -2,7 +2,7 @@ import React from 'react'
 
 function Wave() {
     return (
-        <div className='hidden md:block  animate-slideInUp m-0 p-0 h-64 relative overflow-x-visible'>
+        <div className='hidden md:block overflow-hidden animate-slideInUp m-0 p-0 h-64 relative overflow-x-visible'>
             <svg className='absolute w-screen' id="wave" style={{
                 transform: 'rotate(0deg)',
                 transition: '0.3s',

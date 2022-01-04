@@ -12,7 +12,7 @@ export default function Home(
 ) {
   return (
     <div className="">
-      <Container>
+      <Container center={true}>
         <Meta title="Home | Praveen Kr." description="Welcome to my online cave. Make sure to explore around and read some articles." url="https://praveeen.in/" />
         <Hero />
       </Container>
