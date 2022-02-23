@@ -40,9 +40,9 @@ function HomeLayout({ children }) {
     // }
 
     return (
-        <div className="relative dark:bg-dark-green min-h-screen overflow-hidden" id="HOME">
+        <div className="relative dark:bg-dark-green min-h-screen overflow-hidden z-50" id="HOME">
             <img src="/img/blobs-01.svg" className="absolute inset-0 -z-10" alt="" />
-            <Container center={true}>
+            <Container center={true} className="">
                 <Navbar isScrolled={scrolled} />
 
             </Container>

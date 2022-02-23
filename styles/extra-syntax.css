@@ -38,6 +38,16 @@ pre {
     border-left-width: 4px;
     border-left-color: rgb(59, 130, 246); /* Set highlight accent border color */
   }
+ 
+  .pre-custom {
+    background-color: hsl(230, 1%, 98%); /* Set highlight bg color */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .pre-custom {
+      background-color: hsl(220, 13%, 18%); /* Set highlight bg color */
+    }
+  }
   
   .line-number::before {
     display: inline-block;
