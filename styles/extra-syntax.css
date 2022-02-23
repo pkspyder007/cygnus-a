@@ -48,6 +48,16 @@ pre {
       background-color: hsl(220, 13%, 18%); /* Set highlight bg color */
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    .highlight-line {
+      margin-left: -16px;
+      margin-right: -16px;
+      background-color: rgba(130, 132, 136, 0.2); /* Set highlight bg color */
+      border-left-width: 4px;
+      border-left-color: rgb(59, 130, 246); /* Set highlight accent border color */
+    }
+  }
   
   .line-number::before {
     display: inline-block;
