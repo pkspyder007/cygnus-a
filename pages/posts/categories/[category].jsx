@@ -20,7 +20,7 @@ export default CategoryPost
 
 export const getStaticProps = ({ params }) => {
     const posts = getAllPostMeta();
-    const filteredPosts = posts.filter(post => post.category.includes(params.category));
+    const filteredPosts = posts.filter(post => post.category?.includes(params.category));
 
     return {
         props: {

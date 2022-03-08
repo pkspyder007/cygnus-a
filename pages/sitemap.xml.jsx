@@ -29,8 +29,6 @@ export const getServerSideProps = ({ res }) => {
     .concat(getAllPostPaths().map(path => `${baseUrl}${path}`))
     .concat(Object.keys(CATEGORIES).map(path => `${baseUrl}/categories/${path}`));
 
-    console.log(staticPages);
-
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${staticPages
